@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Acob POS database-backed account management portal">
-    <title><?= esc($title) ?> | Acob POS</title>
+    <meta name="description" content="Ledgerline POS database-backed retail directory">
+    <title><?= esc($title) ?> | Ledgerline POS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('assets/css/app.css') ?>">
 </head>
 <body>
@@ -19,9 +19,9 @@
     <div class="app-shell">
         <!-- One shared layout keeps the header and footer consistent on every page. -->
         <header class="site-header">
-            <a class="brand" href="<?= site_url('/') ?>" aria-label="Acob POS home">
-                <span class="brand-mark"><span>A</span></span>
-                <span><strong>ACOB<span>/POS</span></strong><small>RETAIL CONTROL SYSTEM</small></span>
+            <a class="brand" href="<?= site_url('/') ?>" aria-label="Ledgerline POS home">
+                <span class="brand-mark" aria-hidden="true"><span>LL</span></span>
+                <span><strong>LEDGER<span>LINE</span></strong><small>RETAIL RECORD SYSTEM</small></span>
             </a>
             <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menu</button>
             <nav id="site-navigation" class="site-nav" aria-label="Main navigation">
@@ -37,7 +37,7 @@
         <main id="main-content" tabindex="-1"><?= $this->renderSection('content') ?></main>
 
         <footer class="site-footer">
-            <p><strong>ACOB POS</strong> / Jian Edward A. Acob</p>
+            <p><strong>LEDGERLINE POS</strong> / Built by Jian Edward A. Acob</p>
             <p>TW32 / IT0049 Web System Technologies</p>
         </footer>
     </div>

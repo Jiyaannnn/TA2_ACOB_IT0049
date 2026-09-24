@@ -6,7 +6,7 @@
 
 ---
 
-**Project:** Acob POS
+**Project:** Ledgerline POS
 **Generated:** 2026-09-17 18:49:11
 **Category:** General
 **Design Dials:** Variance 7/10 (Balanced / Modern) | Motion 3/10 (Subtle) | Density 7/10 (Standard)
@@ -19,14 +19,14 @@
 
 | Role | Hex | CSS Variable |
 |------|-----|--------------|
-| Primary | `#2563EB` | `--color-primary` |
+| Primary | `#D59A45` | `--color-primary` |
 | On Primary | `#FFFFFF` | `--color-on-primary` |
-| Secondary | `#3B82F6` | `--color-secondary` |
+| Secondary | `#65C7C0` | `--color-secondary` |
 | On Secondary | `#000000` | `--color-on-secondary` |
-| Accent/CTA | `#EA580C` | `--color-accent` |
+| Accent/CTA | `#E8B96F` | `--color-accent` |
 | On Accent/CTA | `#000000` | `--color-on-accent` |
-| Background | `#F8FAFC` | `--color-background` |
-| Foreground | `#1E293B` | `--color-foreground` |
+| Background | `#08131F` | `--color-background` |
+| Foreground | `#F5F0E6` | `--color-foreground` |
 | Card | `#FFFFFF` | `--color-card` |
 | Card Foreground | `#1E293B` | `--color-card-foreground` |
 | Muted | `#E9EFF8` | `--color-muted` |
@@ -36,14 +36,14 @@
 | On Destructive | `#FFFFFF` | `--color-on-destructive` |
 | Ring | `#2563EB` | `--color-ring` |
 
-**Color Notes:** Trust blue + orange CTA contrast [Accent adjusted from #F97316]
+**Color Notes:** Deep ledger navy, warm paper, copper-gold, and database-status teal.
 
 ### Typography
 
-- **Heading Font:** Fira Code
-- **Body Font:** Fira Sans
-- **Mood:** dashboard, data, analytics, code, technical, precise
-- **Google Fonts:** [Fira Code + Fira Sans](https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap)
+- **Heading Font:** Bricolage Grotesque
+- **Body Font:** Public Sans
+- **Utility Font:** IBM Plex Mono
+- **Mood:** retail ledger, precise, warm, technical, trustworthy
 
 **CSS Import:**
 ```css

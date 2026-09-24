@@ -3,7 +3,7 @@
 <!-- This page receives MySQL records from Users::index() in the controller. -->
 
 <section class="page-heading page-heading-row">
-    <div><span class="eyebrow">Database / Users</span><h1>User accounts</h1><p>Staff profiles retrieved from the MySQL users table.</p></div>
+    <div><span class="eyebrow">Ledger / Users</span><h1>User accounts</h1><p>Staff identity records retrieved from the MySQL user ledger.</p></div>
     <span class="record-count"><?= count($users) ?> accounts</span>
 </section>
 

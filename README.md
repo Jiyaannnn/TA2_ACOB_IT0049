@@ -1,6 +1,6 @@
-# Acob POS TFA2
+# Ledgerline POS TFA2
 
-Acob POS is a database-backed CodeIgniter 4 application created for **Technical Formative Assessment 2: From Arrays to a Real Database**. It replaces the static customer and user arrays from TFA1 with persistent MySQL records retrieved through CodeIgniter Models and Query Builder.
+Ledgerline POS is a database-backed CodeIgniter 4 retail directory created for **Technical Formative Assessment 2: From Arrays to a Real Database**. It replaces the static customer and user arrays from TFA1 with persistent MySQL records retrieved through CodeIgniter Models and Query Builder.
 
 ## Student information
 
@@ -125,4 +125,3 @@ The views remain focused on presentation. Database configuration stays in `.env`
 
 - **GitHub repository:** To be added after publication
 - **Hosted application:** To be added after deployment
-

@@ -3,7 +3,7 @@
 <!-- The controller supplies database records; this view only handles presentation. -->
 
 <section class="page-heading page-heading-row">
-    <div><span class="eyebrow">Database / Customers</span><h1>Customer accounts</h1><p>Contact records retrieved from the MySQL customers table.</p></div>
+    <div><span class="eyebrow">Ledger / Customers</span><h1>Customer accounts</h1><p>Verified contact records retrieved from the MySQL customer ledger.</p></div>
     <span class="record-count"><?= count($customers) ?> records</span>
 </section>
 

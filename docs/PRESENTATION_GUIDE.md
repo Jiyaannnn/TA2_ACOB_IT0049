@@ -2,7 +2,7 @@
 
 ## Short project explanation
 
-I extended my TFA1 Acob POS project by replacing the static customer and user arrays with a real MySQL database. The application still uses the same four routes and responsive views, but the Customers and Users controllers now create their respective Models and call `findAll()` through CodeIgniter Query Builder. The Models connect the application to the `customers` and `users` tables, while the views remain responsible only for safely displaying each record.
+I extended my TFA1 project into Ledgerline POS by replacing the static customer and user arrays with a real MySQL database. The application still uses the same four routes and responsive views, but the Customers and Users controllers now create their respective Models and call `findAll()` through CodeIgniter Query Builder. The Models connect the application to the `customers` and `users` tables, while the views remain responsible only for safely displaying each record.
 
 ## Demonstration order
 
@@ -54,4 +54,3 @@ php spark db:seed PosSeeder
 php spark serve
 vendor/bin/phpunit --testdox
 ```
-

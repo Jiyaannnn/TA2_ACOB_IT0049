@@ -4,7 +4,7 @@ Use a desktop browser at approximately 1440 x 900 unless a mobile size is specif
 
 | Figure | Open | What must be visible | Caption | Short explanation |
 | --- | --- | --- | --- | --- |
-| 1 | `/` | Acob POS navigation, TFA2 dashboard, total of 10 records, five customers, and five users | **Figure 1. Database-backed Acob POS dashboard.** | The dashboard totals are calculated from the CustomerModel and UserModel instead of hard-coded arrays. |
+| 1 | `/` | Ledgerline POS navigation, TFA2 dashboard, total of 10 records, five customers, and five users | **Figure 1. Database-backed Ledgerline POS dashboard.** | The dashboard totals are calculated from the CustomerModel and UserModel instead of hard-coded arrays. |
 | 2 | `/customers` | Page title, database description, record count, and all five customer rows | **Figure 2. Customer records retrieved from MySQL.** | CustomerModel retrieves the rows and the existing view displays each record with a `foreach` loop. |
 | 3 | `/users` | Page title, database description, record count, usernames, names, and creation dates | **Figure 3. User records retrieved from MySQL.** | UserModel returns five staff records from the users table without a static controller array. |
 | 4 | MySQL terminal | `SELECT * FROM customers;` result with five rows and column headings | **Figure 4. Customers table and sample records.** | The customers table follows the supplied schema and contains the required minimum of five records. |
@@ -30,4 +30,3 @@ SELECT * FROM users;
 ```
 
 Do not include private credentials or an unredacted password in any screenshot.
-
