@@ -8,9 +8,10 @@ class Users extends BaseController
 {
     public function index(): string
     {
+        // The UserModel replaces the static user array used in TFA1.
         $userModel = new UserModel();
 
-        // The controller passes database results to the existing presentation layer.
+        // Query Builder retrieves the users in a stable order before rendering.
         return view('users/index', [
             'title'      => 'User Accounts',
             'activePage' => 'users',

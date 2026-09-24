@@ -6,6 +6,7 @@ use CodeIgniter\Database\Migration;
 
 class CreatePosTables extends Migration
 {
+    // up() applies the schema when `php spark migrate` is executed.
     public function up(): void
     {
         // The customers table follows the schema supplied in the activity.
@@ -33,9 +34,8 @@ class CreatePosTables extends Migration
 
     public function down(): void
     {
-        // Drop the dependent activity tables when a migration is rolled back.
+        // down() reverses the migration during a rollback or migration refresh.
         $this->forge->dropTable('users', true);
         $this->forge->dropTable('customers', true);
     }
 }
-

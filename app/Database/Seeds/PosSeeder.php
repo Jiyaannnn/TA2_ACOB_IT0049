@@ -8,9 +8,10 @@ class PosSeeder extends Seeder
 {
     public function run(): void
     {
+        // One shared timestamp keeps the demonstration records consistent.
         $createdAt = '2026-09-24 08:00:00';
 
-        // Each associative array becomes one customer row in MySQL.
+        // insertBatch() efficiently writes all five customer arrays to MySQL.
         $this->db->table('customers')->insertBatch([
             ['full_name' => 'Angelo Pineda', 'email' => 'anpineda@fit.edu.ph', 'phone' => '09074144816', 'created_at' => $createdAt],
             ['full_name' => 'Richmon Miguel', 'email' => 'rbmiguel@fit.edu.ph', 'phone' => '09927918909', 'created_at' => $createdAt],
@@ -19,7 +20,7 @@ class PosSeeder extends Seeder
             ['full_name' => 'Tristan Cachapero', 'email' => 'tbcachapero@fit.edu.ph', 'phone' => '09760997496', 'created_at' => $createdAt],
         ]);
 
-        // These five rows replace the static user array from TFA1.
+        // A second batch inserts the five records that replace TFA1's user array.
         $this->db->table('users')->insertBatch([
             ['username' => 'jacob', 'full_name' => 'Jian Acob', 'created_at' => $createdAt],
             ['username' => 'ivicencio', 'full_name' => 'Isaiah Vicencio', 'created_at' => $createdAt],
@@ -29,4 +30,3 @@ class PosSeeder extends Seeder
         ]);
     }
 }
-

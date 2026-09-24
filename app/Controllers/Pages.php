@@ -21,7 +21,7 @@ class Pages extends BaseController
 
     public function index(): string
     {
-        // Model counts keep the dashboard summary synchronized with MySQL.
+        // countAllResults() keeps both dashboard totals synchronized with MySQL.
         $data = $this->sharedData('Dashboard', 'home');
         $data['customerCount'] = (new CustomerModel())->countAllResults();
         $data['userCount'] = (new UserModel())->countAllResults();

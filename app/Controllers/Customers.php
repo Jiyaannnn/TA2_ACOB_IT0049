@@ -8,9 +8,10 @@ class Customers extends BaseController
 {
     public function index(): string
     {
+        // Creating the Model gives this controller access to the customers table.
         $customerModel = new CustomerModel();
 
-        // findAll() uses CodeIgniter Query Builder to retrieve every database row.
+        // Query Builder sorts by id, while findAll() retrieves every customer row.
         return view('customers/index', [
             'title'      => 'Customer Accounts',
             'activePage' => 'customers',
