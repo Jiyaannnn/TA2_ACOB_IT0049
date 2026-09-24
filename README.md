@@ -123,5 +123,5 @@ The views remain focused on presentation. Database configuration stays in `.env`
 
 ## Submission links
 
-- **GitHub repository:** To be added after publication
+- **GitHub repository:** https://github.com/Jiyaannnn/TA2_ACOB_IT0049
 - **Hosted application:** To be added after deployment
