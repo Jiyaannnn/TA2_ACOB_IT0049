@@ -2,11 +2,11 @@
 -- Jian Edward A. Acob | TW32 | IT0049 Web System Technologies
 
 -- Create the activity database with full Unicode character support.
-CREATE DATABASE IF NOT EXISTS acob_pos_tfa2
+CREATE DATABASE IF NOT EXISTS ledgerline_pos_tfa2
     CHARACTER SET utf8mb4
     COLLATE utf8mb4_unicode_ci;
 
-USE acob_pos_tfa2;
+USE ledgerline_pos_tfa2;
 
 -- Removing old copies makes this export safe to import again during setup.
 DROP TABLE IF EXISTS users;

@@ -14,7 +14,7 @@ I extended my TFA1 project into Ledgerline POS by replacing the static customer 
 6. Open `CustomerModel.php` and `UserModel.php` and explain their table mappings.
 7. Open both controllers and identify the `findAll()` calls.
 8. Open one view and explain that `foreach` repeats the rows while `esc()` protects displayed values.
-9. Show the migration, seeder, and `database/acob_pos_tfa2.sql` export.
+9. Show the migration, seeder, and `database/ledgerline_pos_tfa2.sql` export.
 10. Show the README, GitHub repository, and hosted URL.
 
 ## Points to explain clearly

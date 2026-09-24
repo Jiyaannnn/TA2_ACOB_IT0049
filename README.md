@@ -53,7 +53,7 @@ Ledgerline POS is a database-backed CodeIgniter 4 retail directory created for *
    app.baseURL = 'http://localhost:8080/'
 
    database.default.hostname = 127.0.0.1
-   database.default.database = acob_pos_tfa2
+   database.default.database = ledgerline_pos_tfa2
    database.default.username = root
    database.default.password =
    database.default.DBDriver = MySQLi
@@ -64,7 +64,7 @@ Ledgerline POS is a database-backed CodeIgniter 4 retail directory created for *
 5. Create the database.
 
    ```bash
-   mysql -u root -e "CREATE DATABASE acob_pos_tfa2 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+   mysql -u root -e "CREATE DATABASE ledgerline_pos_tfa2 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
    ```
 
 6. Create the required tables and insert the sample records.
@@ -86,10 +86,10 @@ If port 8080 is unavailable, run `php spark serve --port 8081` and change `app.b
 
 ## Alternative database import
 
-The complete SQL export is available at `database/acob_pos_tfa2.sql`. It creates the database, both required tables, and all ten sample records.
+The complete SQL export is available at `database/ledgerline_pos_tfa2.sql`. It creates the database, both required tables, and all ten sample records.
 
 ```bash
-mysql -u root < database/acob_pos_tfa2.sql
+mysql -u root < database/ledgerline_pos_tfa2.sql
 ```
 
 ## How the database flow works
@@ -112,7 +112,7 @@ The views remain focused on presentation. Database configuration stays in `.env`
 | `app/Controllers/Users.php` | Retrieves and sends user records to the view |
 | `app/Database/Migrations/2026-09-24-092700_CreatePosTables.php` | Creates the required tables |
 | `app/Database/Seeds/PosSeeder.php` | Inserts five records into each table |
-| `database/acob_pos_tfa2.sql` | Portable database export required for submission |
+| `database/ledgerline_pos_tfa2.sql` | Portable database export required for submission |
 
 ## Security notes
 
